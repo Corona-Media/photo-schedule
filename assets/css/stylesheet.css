@@ -100,3 +100,9 @@ select {
 .addBtn:hover {
     background-color: #bbb;
 }
+
+select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;       /* Remove default arrow */
+ }

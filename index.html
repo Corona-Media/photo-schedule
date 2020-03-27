@@ -3,131 +3,31 @@
 	<title>Photo Schedule</title>
 
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<link rel="apple-touch-icon" sizes="180x180" href="assets/icons/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="assets/icons/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="assets/icons/favicon-16x16.png">
+	<link rel="manifest" href="assets/icons/site.webmanifest">
     
 	<!-- Latest compiled and minified CSS -->
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 
-
 	<!-- jQuery library -->
-    	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
 
 	<!-- Popper JS -->
-    	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
 
 	<!-- Latest compiled JavaScript -->
-    	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-	  
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+	
+	<!-- Custon CSS -->
+	<link rel="stylesheet" href="assets/css/stylesheet.css">
+
 	<style type="text/css">
   		body { 
 		background: #4a86e8ff !important; 
 		} 
-	</style>
-
-<style>
-
-	
-	/* Remove margins and padding from the list */
-	ul {
-	  margin: 0;
-	  padding: 0;
-	}
-	
-	/* Style the list items */
-	ul li {
-	  cursor: pointer;
-	  position: relative;
-	  padding: 12px 8px 12px 40px;
-	  list-style-type: none;
-	  background: #eee;
-	  font-size: 24px;
-	  transition: 0.2s;
-	  
-	  /* make the list items unselectable */
-	  -webkit-user-select: none;
-	  -moz-user-select: none;
-	  -ms-user-select: none;
-	  user-select: none;
-	}
-
-	/* Darker background-color on hover */
-	ul li:hover {
-	  background: #ddd;
-	}
-	
-	/* When clicked on, add a background color and strike out text */
-	ul li.checked {
-	  background: #32a852;
-	  color: #fff;
-	  text-decoration: line-through;
-	}
-	
-	/* Add a "checked" mark when clicked on */
-	ul li.checked::before {
-	  content: '';
-	  position: absolute;
-	  border-color: #fff;
-	  border-style: solid;
-	  border-width: 0 2px 2px 0;
-	  top: 22px;
-	  left: 16px;
-	  transform: rotate(45deg);
-	  height: 15px;
-	  width: 7px;
-	}
-	
-	/* Style the close button */
-	.close {
-	  position: absolute;
-	  right: 0;
-	  top: 0;
-	  padding: 13.5px 16px 22px 16px;
-	}
-	
-	.close:hover {
-	  background-color: #f44336;
-	  color: white;
-	}
-	
-
-	
-	/* Clear floats after the header */
-	.header:after {
-	  content: "";
-	  display: table;
-	  clear: both;
-	}
-	
-	/* Style the input */
-	select {
-	  margin: 0;
-	  border: none;
-	  border-radius: 0;
-	  background-color: white;
-	  height: 7%;
-	  width: 75%;
-	  padding: 10px;
-	  float: left;
-	  font-size: 16px;
-	}
-	
-	/* Style the "Add" button */
-	.addBtn {
-	  padding: 10px;
-	  width: 25%;
-	  height: 7%;
-	  background: #32a852;
-	  color: #555;
-	  float: left;
-	  text-align: center;
-	  font-size: 15.5px;
-	  cursor: pointer;
-	  transition: 0.3s;
-	  border-radius: 0;
-	}
-	
-	.addBtn:hover {
-	  background-color: #bbb;
-	}
 	</style>
   </head>
 
@@ -143,8 +43,9 @@
 					<option>Music &#127925</option>
 					<option>Story Time &#128214</option>
 					<option>Gym &#127947</option>
-					<option>Music &#127925</option>
-					<option>Music &#127925</option>
+					<option>Lunch &#127860</option>
+					<option>Science &#128300</option>
+					<option>Dismissal &#128652</option>
 			</select>
 
 			<span onclick="newElement()" class="addbtn">Add</span>

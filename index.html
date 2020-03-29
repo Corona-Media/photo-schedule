@@ -49,9 +49,10 @@
 		<ul id="myUL" class="list-group ml-3 mr-3">
 		  
 		</ul>
-	  
+
     	<script>
-			// Create a "close" button and append it to each list item
+
+			// Close Button
 			var myNodelist = document.getElementsByTagName("LI");
 			var i;
 			for (i = 0; i < myNodelist.length; i++) {
@@ -62,7 +63,7 @@
 			myNodelist[i].appendChild(span);
 			}
 
-			// Click on a close button to hide the current list item
+			// Delete When Closed Button Clicked
 			var close = document.getElementsByClassName("close");
 			var i;
 			for (i = 0; i < close.length; i++) {
@@ -72,7 +73,7 @@
 			}
 			}
 
-			// Add a "checked" symbol when clicking on a list item
+			// Create Check Symbol
 			var list = document.querySelector('ul');
 			list.addEventListener('click', function(ev) {
 			if (ev.target.tagName === 'LI') {
@@ -80,9 +81,10 @@
 			}
 			}, false);
 
-			// Create a new list item when clicking on the "Add" button
+			// Create Item When Add Button Clicked
 			function newElement() {
 			var li = document.createElement("li");
+			var li1 = li.setAttributeondrop=("'drop(event)' ondragover='allowDrop(event)'");
 			var inputValue = document.getElementById("myInput").value;
 			var t = document.createTextNode(inputValue);
 			li.appendChild(t);

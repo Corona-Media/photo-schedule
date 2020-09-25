@@ -8,27 +8,20 @@
 	<link rel="icon" type="image/png" sizes="32x32" href="assets/icons/favicon-32x32.png">
 	<link rel="icon" type="image/png" sizes="16x16" href="assets/icons/favicon-16x16.png">
 	<link rel="manifest" href="assets/icons/site.webmanifest">
-    
-	<!-- Latest compiled and minified CSS -->
-	<link rel="stylesheet" href="assets/css/bootstrap.min.css">
 	
-	<!-- Custon CSS -->
 	<link rel="stylesheet" href="assets/css/stylesheet.css">
 
 	<style type="text/css">
-  		body { 
-		background: #4a86e8ff !important; 
-		} 
+  		
 	</style>
   </head>
 
   <body>
 		<div class="header bg-dark text-center">
-			<h6 class="text-light"><b>Notes: </b>There is no current way to order the list. The first item appears at the top and the rest go downwards from there.</h6>
-			<h6 class="text-light">If you reload the page it will reset your list due to a lack of local saves. I am working on implementing local saving and should be done soon.</h6>
+			<h6 class="text-light" style="padding-top: 5px;"><b>Note: </b>There is no current way to order the list. The first item appears at the top and the rest go downwards from there.</h6>
 		</div>
 
-		<div id="myDIV" class="header ml-3 mr-3 mt-3">
+		<div id="optionDiv" class="header ml-3 mr-3 mt-3">
 			<select id="myInput">
 					<option value="" disable selected>Select A Schedule Item</option>
 					<option>Math &#10133</option>
@@ -46,66 +39,10 @@
 			<span onclick="newElement()" class="addbtn">Add</span>
 		</div>
 		  
-		<ul id="myUL" class="list-group ml-3 mr-3">
+		<ul id="list" class="list-group ml-3 mr-3">
 		  
 		</ul>
 
-    	<script>
-			// Close Button
-			var myNodelist = document.getElementsByTagName("LI");
-			var i;
-			for (i = 0; i < myNodelist.length; i++) {
-			var span = document.createElement("SPAN");
-			var txt = document.createTextNode("\u00D7");
-			span.className = "close";
-			span.appendChild(txt);
-			myNodelist[i].appendChild(span);
-			}
-
-			// Delete When Closed Button Clicked
-			var close = document.getElementsByClassName("close");
-			var i;
-			for (i = 0; i < close.length; i++) {
-			close[i].onclick = function() {
-				var div = this.parentElement;
-				div.style.display = "none";
-			}
-			}
-
-			// Create Check Symbol
-			var list = document.querySelector('ul');
-			list.addEventListener('click', function(ev) {
-			if (ev.target.tagName === 'LI') {
-				ev.target.classList.toggle('checked');
-			}
-			}, false);
-
-			// Create Item When Add Button Clicked
-			function newElement() {
-			var li = document.createElement("li");
-			var inputValue = document.getElementById("myInput").value;
-			var t = document.createTextNode(inputValue);
-			li.appendChild(t);
-			if (inputValue === '') {
-				alert("You must select something!");
-			} else {
-				document.getElementById("myUL").appendChild(li);
-			}
-			document.getElementById("myInput").value = "";
-
-			var span = document.createElement("SPAN");
-			var txt = document.createTextNode("\u00D7");
-			span.className = "close";
-			span.appendChild(txt);
-			li.appendChild(span);
-
-			for (i = 0; i < close.length; i++) {
-				close[i].onclick = function() {
-				var div = this.parentElement;
-				div.style.display = "none";
-				}
-			}
-			}
-    	</script>
+    	<script src="assets/js/main.js"></script>
   </body>
 </html>

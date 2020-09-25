@@ -1,0 +1,1 @@
+A simple, elegant, photo schedule/planner for school age children. Email feedback@covidkidsonline.com if you have any suggestions for additional schedule options. Check it out at [https://covidkidsonline.com/photo-schedule/](https://covidkidsonline.com/photo-schedule/).

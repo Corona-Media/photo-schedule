@@ -9,7 +9,6 @@ body {
 ::before {
 	box-sizing: border-box
 }
-
 h1,
 h2,
 h3,
@@ -74,8 +73,8 @@ ul li.checked::before {
     border-color: #fff;
     border-style: solid;
     border-width: 0 2px 2px 0;
-    top: 22px;
-    left: 16px;
+    top: 20px;
+    left: 20px;
     transform: rotate(45deg);
     height: 15px;
     width: 7px;
@@ -85,7 +84,7 @@ ul li.checked::before {
 	line-height: 1;
     position: absolute;
     right: 0;
-    color: white;
+    color: black;
     top: 0;
     padding: 17.5px 14px 18.5px 16px;
 }
@@ -103,16 +102,22 @@ select {
     border: none;
     border-radius: 0;
     background-color: white;
-    height: 7%;
+    height: 50px;
     width: 75%;
     padding: 10px;
     float: left;
     font-size: 16px;
 }
-.addBtn {
+select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+.add-item-button {
     padding: 10px;
     width: 25%;
-    height: 7%;
+    height: 50px;
     padding-top: 15px;
     background: #32a852;
     color: #555;
@@ -123,11 +128,21 @@ select {
     transition: 0.3s;
     border-radius: 0;
 }
-.addBtn:hover {
+.add-item-button:hover {
     background-color: #ddd;
 }
-select {
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none;
+.up-arrow {
+    -webkit-transform: rotate(90deg);
+    transform: rotate(90deg);
+    top: 6px;
+}
+.down-arrow {
+    -webkit-transform: rotate(-90deg);
+    transform: rotate(-90deg);
+    bottom: 6px;
+}
+.arrow {
+    width: 20px;
+    position: absolute;
+    left: 0px;
 }
